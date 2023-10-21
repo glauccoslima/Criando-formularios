@@ -1,0 +1,200 @@
+/* Estilos Globais e Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização geral da página */
+.page {
+  width: 736px;
+  margin: auto;
+}
+
+/* Fontes padrão e estilos do corpo da página */
+body,
+input,
+button,
+select,
+textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #EFEFEF;
+}
+
+/* Estilo do fundo do topo da página */
+body::before {
+  content: '';
+  width: 100%;
+  height: 385px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+}
+
+/* Estilos do cabeçalho da página */
+header {
+  width: 319px;
+  margin-top: 74px;
+}
+
+header h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 48px;
+  color: white;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+
+header p {
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 58px;
+}
+
+/* Estilos do formulário */
+form {
+  margin-top: 58px;
+  background: #FFF;
+  ;
+  min-height: 300px;
+  border-radius: 20px 20px 0px 0px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Removendo bordas do fieldset e estilização dos seus conteúdos */
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset legend {
+  color: #535971;
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  width: 100%;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+}
+
+.legenda-grupo-2 {
+  margin-bottom: 32px;
+  padding-bottom: 0;
+}
+
+/* Estilos dos campos de input */
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilização dos labels dos campos e dicas */
+.input-wrapper label {
+  color: #4E4958;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+}
+
+.input-wrapper label span:hover {
+  color: #6c6a71;
+}
+
+/* Estilização dos campos de input, textarea e select */
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+  background: var(--shapes-02, #FAFAFC);
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  border-radius: 8px;
+  height: 56px;
+  padding: 0 24px;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--texts-inputs, #6c6a71);
+  margin-bottom: 16px;
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 168px;
+}
+
+/* Estilos para colunas no formulário */
+.col-2 {
+  display: flex;
+  gap: 22px;
+  margin-top: 36px;
+}
+
+.col-2 .input-wrapper {
+  flex: 1;
+}
+
+.col-3 {
+  display: flex;
+  gap: 20px;
+}
+
+.col-3>div:nth-child(1) {
+  width: 100%;
+}
+
+h2 {
+  color: #535971;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  margin: 15px 0 8px;
+}
+
+/* Estilos para o rodapé do formulário */
+footer {
+  border-radius: 0px 0px 20px 20px;
+  background: #535971;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 64px;
+  margin-bottom: 100px;
+  border-top: 1px solid #D6D6D6;
+}
+
+footer .button {
+  height: 56px;
+  background: #FF5374;
+  border-radius: 20px;
+  border: 0;
+  color: #FFF;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+footer .button:hover {
+  background: #b62d48;
+}

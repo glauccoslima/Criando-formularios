@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta e encoding settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título da página -->
+  <title>Crie seu evento</title>
+
+  <!-- Styles e fonts -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Container principal da página -->
+  <div class="page">
+
+    <!-- Cabeçalho com informações gerais -->
+    <header>
+      <h1>MENTORIA</h1>
+      <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+    </header>
+
+    <!-- Formulário principal para criação de eventos -->
+    <form id="my-form">
+
+      <!-- Seção para informações gerais do evento -->
+      <fieldset>
+        <legend>Informações pessoais</legend>
+        <div class="fieldset-wrapper">
+          <!-- Campo para o título do evento -->
+          <div class="col-2">
+            <div class="input-wrapper">
+              <label for="event-title">Nome</label>
+              <input type="text" id="event-title" required minlength="3">
+            </div>
+            <div class="input-wrapper">
+              <label for="event-sobre">Sobrenome</label>
+              <input type="text" id="event-sobre" required minlength="3">
+            </div>
+          </div>
+          <!-- Campo para email -->
+          <div class="input-wrapper">
+            <label for="event-email">Email <span>(digite um email válido)</span></label>
+            <input type="email" id="event-email" required>
+          </div>
+          <!-- Campo para senha -->
+          <div class="input-wrapper">
+            <label for="event-senha">Senha <span>(mínimo de 6 caracteres)</span></label>
+            <input type="password" id="event-senha" required minlength="6">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Seção para configurações de Informações do mentor -->
+      <fieldset>
+        <legend class="legenda-grupo-2">Informações do mentor</legend>
+        <div class="fieldset-wrapper">
+          <!-- Campo para nome -->
+          <div class="input-wrapper">
+            <label class="nome-label" for="event-nome">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+            <input type="text" id="event-nome" required minlength="8">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Seção para definir data e horário do evento -->
+      <fieldset>
+        <legend class="legenda-grupo-2">Seus horários disponíveis</legend>
+        <h2>Primeira mentoria</h2>
+        <div class="col-3">
+          <!-- Campo para definir a data -->
+          <div class="input-wrapper">
+            <label for="event-date-1">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="event-date-1" required>
+          </div>
+
+          <!-- Campo para definir a hora de início -->
+          <div class="input-wrapper">
+            <label for="event-begin-1">Das</label>
+            <input type="time" id="event-begin-1" required>
+          </div>
+
+          <!-- Campo para definir a hora de término -->
+          <div class="input-wrapper">
+            <label for="event-end-1">Até</label>
+            <input type="time" id="event-end-1" required>
+          </div>
+        </div>
+        <h2>Segunda mentoria</h2>
+        <div class="col-3">
+          <!-- Campo para definir a data -->
+          <div class="input-wrapper">
+            <label for="event-date-2">Data <span>(DD/MM/AAAA)</span></label>
+            <input type="date" id="event-date-2" required>
+          </div>
+
+          <!-- Campo para definir a hora de início -->
+          <div class="input-wrapper">
+            <label for="event-begin-2">Das</label>
+            <input type="time" id="event-begin-2" required>
+          </div>
+
+          <!-- Campo para definir a hora de término -->
+          <div class="input-wrapper">
+            <label for="event-end-2">Até</label>
+            <input type="time" id="event-end-2" required>
+          </div>
+        </div>
+      </fieldset>
+
+    </form>
+
+    <!-- Rodapé contendo o botão de submit do formulário -->
+    <footer>
+      <input class="button" type="submit" form="my-form" value="Salvar">
+    </footer>
+  </div>
+</body>
+
+</html>
